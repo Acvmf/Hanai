@@ -1,0 +1,25 @@
+{
+  "name": "calc",
+  "description": "a money calculator based on when you get paid and how much money you have",
+  "main": "src/index.html",
+  "authors": [
+    "Dreii <seanverhaagen@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "calculator"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ]
+}
