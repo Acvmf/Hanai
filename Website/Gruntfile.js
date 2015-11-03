@@ -53,9 +53,9 @@ module.exports = function (grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'src/images/',
+                    cwd: 'src/img/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'dist/images/'
+                    dest: 'dist/img/'
                 }]
             }
         },
@@ -102,6 +102,11 @@ module.exports = function (grunt) {
             css: {
                 files: 'src/css/*.css',
                 tasks: 'cssmin'
+            },
+            
+            img: {
+                files: 'src/img/*.*',
+                tasks: 'imagemin'
             }
         }
     });
@@ -118,6 +123,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-open');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['htmlmin', 'concat', 'uglify', 'cssmin']);
+    grunt.registerTask('default', ['htmlmin', 'concat', 'uglify', 'cssmin', 'imagemin']);
     grunt.registerTask('dev', ['express', 'open', 'watch']);
 };
