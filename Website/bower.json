@@ -1,13 +1,13 @@
 {
-  "name": "calc",
-  "description": "a money calculator based on when you get paid and how much money you have",
+  "name": "hanai",
+  "description": "a basic website for hanai",
   "main": "src/index.html",
   "authors": [
     "Dreii <seanverhaagen@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
-    "calculator"
+    "hanai", "travel"
   ],
   "moduleType": [
     "globals"

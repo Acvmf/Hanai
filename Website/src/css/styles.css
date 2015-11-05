@@ -90,3 +90,48 @@ body{
         height:32px;
     }
 }
+
+.subslurbBox{
+    margin-right: 8px;
+    border: 3px solid white;
+    padding: 29px 0px 29px 16px;
+    font-size: 24px;
+    color: #e74d3c !important;
+    outline:none;
+}
+
+.subslurbBox:focus{
+    margin-right: 8px;
+    border: 3px solid white;
+    padding: 29px 0px 29px 16px;
+    font-size: 24px;
+    background-color: #e74d3c !important;
+    color:white !important;
+    outline:none;
+}
+
+.subslurbButton{
+    color: #e74d3c;
+    padding: 13px;
+    font-size:24px;
+    border: 3px solid white;
+}
+
+
+.subslurbButton:hover{
+    color: white;
+    background-color: #e74d3c;
+    border: 3px solid white;
+}
+
+.form-control::-webkit-input-placeholder { color: #e74d3c; }
+.form-control:-moz-placeholder { color: #e74d3c; }
+.form-control::-moz-placeholder { color: #e74d3c; }
+.form-control:-ms-input-placeholder { color: #e74d3c; }
+
+.form-control::-webkit-input-placeholder:focus { color: white; outline:none;}
+.form-control:-moz-placeholder:focus { color: white; outline:none;}
+.form-control::-moz-placeholder:focus { color: white; outline:none;}
+.form-control:-ms-input-placeholder:focus { color: white; outline:none;}
+
+input, textarea, select, a { outline: none; };
