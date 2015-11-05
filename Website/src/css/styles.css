@@ -44,7 +44,7 @@ body{
 
 .social-media-links li{
     margin-left:16px;
-    margin-right:16px
+    margin-right:16px;
 }
 
 .mc{
@@ -61,6 +61,11 @@ body{
 .navbar-nav>li>a{
     padding:0px;
     padding-left:32px;
+    
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 767px) { 
