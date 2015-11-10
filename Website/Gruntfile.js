@@ -59,6 +59,16 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        
+        csslint: {
+          strict: {
+            options: {
+              import: 2
+            },
+            src: ['src/css/**/*.css']
+          }
+        },
+        
         // grunt-express will serve the files from the folders listed in `bases`
         // on specified `port` and `hostname`
         express: {
@@ -101,11 +111,11 @@ module.exports = function (grunt) {
             
             css: {
                 files: 'src/css/*.css',
-                tasks: 'cssmin'
+                tasks: ['cssmin', 'csslint']
             },
             
             img: {
-                files: 'src/img/*.*',
+                files: 'src/img/**/*.*',
                 tasks: 'imagemin'
             }
         }
@@ -121,6 +131,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-open');
+    grunt.loadNpmTasks('grunt-contrib-csslint');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['htmlmin', 'concat', 'uglify', 'cssmin', 'imagemin']);
