@@ -83,19 +83,19 @@ html, body{
     margin-top: 32px;
 }
 
+.mc-form *{
+    border-radius: 12px;
+}
+
 .subslurbBox{
     margin-right: 8px;
-    border: 3px solid white;
-    padding: 29px 0 29px 16px;
-    font-size: 24px;
+    padding: 24px 0 24px 16px;
+    font-size: 12px;
     color: #e74d3c;
 }
 
 .subslurbBox:focus{
     margin-right: 8px;
-    border: 3px solid white;
-    padding: 29px 0 29px 16px;
-    font-size: 24px;
     background-color: #e74d3c;
     color:white;
     outline:none;
