@@ -1,0 +1,29 @@
+/*helper classes for quick editing*/
+.red{
+    color:#e74d3c;
+}
+
+.white{
+    color:white;
+}
+
+.pacif{
+    font-family: 'Pacifico', cursive;
+}
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.black{
+    color:#333333;
+}
+
+.hugeText{
+    font-size: 16vw;
+}
+
+.bigGiantHanai{
+    margin-top: 16px;
+}
+/*end helper classes*/

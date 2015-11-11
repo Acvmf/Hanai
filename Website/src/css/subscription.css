@@ -1,0 +1,57 @@
+/*subscription box*/
+
+/* -all boxes- */
+.newsletter div, .newsletter input{
+    border-radius: 16px;
+    border:none;
+}
+
+/* -submit button, input box, and input box addon- */
+.newsletter input, .newsletterInputAddon{
+    
+    font-family: 'Lato', sans-serif;
+    background-color:white;
+    
+    position:relative;
+    top:0;
+    
+    box-shadow: 0 3px 0 #9D312F;
+    transition-property: box-shadow;
+    transition-duration: 150ms;
+}
+
+/* -submit button and input boxes addon- */
+.newsletter .btn, .newsletterInputAddon{
+    font-weight:900;
+    color:#e74d3c;
+    font-size: 24px;
+}
+
+/* -input boxes addon- */
+.newsletterInputAddon{
+    padding-right: 16px;
+    border-left:3px solid #e74d3c;
+    transition-duration: 250ms;
+}
+
+/* -input box and its addon when input box is in focus- */
+.newsletter input:focus, .newsletter input:focus ~ .newsletterInputAddon{
+    box-shadow: 0 6px 0 #9D312F;
+    outline:none;
+    border:none;
+}
+
+.newsletter .btn{
+    position:relative;
+    top:0;
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.newsletter .btn:hover{
+    background-color: white;
+    box-shadow: 0 6px 0 #9D312F;
+}
+
+/*end subscription box*/

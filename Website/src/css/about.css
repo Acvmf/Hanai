@@ -1,0 +1,18 @@
+/* about section */
+
+.aboutSection{
+    background-color: white;
+    padding-top: 64px;
+}
+
+.aboutSection .row{
+    margin-bottom:72px;
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    font-weight:900;
+    font-size: 48px;
+}
+
+/* end about section */

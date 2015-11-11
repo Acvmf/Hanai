@@ -24,6 +24,7 @@ module.exports = function (grunt) {
                 src: [
                     'libs/jquery/**/*.min.js',
                     'libs/**/*.min.js',//All JS in this directory
+                    'libs/*.min.js',
                     'src/js/*.js'
                 ],
                 dest: 'dist/js/production.js'
@@ -134,6 +135,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-csslint');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['htmlmin', 'concat', 'uglify', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['htmlmin', 'concat', 'uglify', 'cssmin', 'imagemin', 'express', 'open', 'watch']);
     grunt.registerTask('dev', ['express', 'open', 'watch']);
 };
