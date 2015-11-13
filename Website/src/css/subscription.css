@@ -47,11 +47,45 @@
     
     padding-top: 7px;
     padding-bottom: 7px;
+    
+    box-shadow: 0 3px 0 #9D312F;
 }
 
 .newsletter .btn:hover{
     background-color: white;
     box-shadow: 0 6px 0 #9D312F;
 }
+
+.newsletter .btn:active{
+    background-color: white;
+    box-shadow: 0 0 0 #9D312F;
+}
+
+.newsletter .btn:visited{
+    background-color: white;
+    box-shadow: 0 0 0 #9D312F;
+}
+
+.newsletter .btn:focus{
+    background-color: white;
+    outline:none;
+    top:0 !important;
+    box-shadow: 0 3px 0 #9D312F;
+    
+    color:#e74d3c;
+}
+
+.newsletter .btn:focus:hover{
+    top:3px !important;
+    box-shadow: 0 0 0 #9D312F !important;
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+    .newsletter .btn{
+        margin-top:16px;
+    }
+}
+/*end mobile*/
 
 /*end subscription box*/

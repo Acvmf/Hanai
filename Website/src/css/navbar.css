@@ -32,4 +32,43 @@
     /*padding-bottom:6px;
     border-bottom: 3px solid white;*/
 }
+
+
+/*mobile*/
+.navbar-default .navbar-toggle{
+    border: 2px solid #9D312F;
+    
+    transition-property: background-color;
+    transition-duration: 0.25s;
+}
+
+.navbar-default .navbar-toggle:focus{
+    background-color: #e74d3c;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background-color: white;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #9D312F;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse{
+        background-color: white;
+    }
+    
+    .navbar-default .navbar-nav>li>a{
+        color: #9D312F;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #e74d3c;
+    }
+}
+/*end mobile*/
+
+
 /*end navigation*/

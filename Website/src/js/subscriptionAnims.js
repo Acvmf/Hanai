@@ -21,13 +21,34 @@ $('.newsletterInput').on({
 });
 
 
-$('.btn').mouseenter(function(){
+$('.btn').mousedown(function(){
     $(this).animate({
-        top:"-3"
+        top:"3"
     }, 150)
 })
+.mouseenter(function(){
+    if($(this).is(":focus")){
+        
+    }
+    else{
+        $(this).animate({
+            top:"-3"
+        }, 150)
+    }
+})
 .mouseleave(function(){
-    $(this).animate({
+    if($(this).is(":focus")){
+        
+    }
+    else{
+        $(this).animate({
+            top:"0"
+        }, 150)
+    }
+});
+
+$(window).mouseup(function(){
+    $('.btn').animate({
         top:"0"
-    }, 150)
+    }, 150).blur()
 });

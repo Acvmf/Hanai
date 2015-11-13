@@ -68,8 +68,75 @@ footer .btn{
     border:none;
 }
 
-footer .btn:hover{
-    color: #e74d3c;
+#footerButton{
+    position:relative;
+    top:0;
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+    box-shadow: 0 3px 0 #9D312F;
+}
+
+#footerButton:hover{
     background-color: white;
     box-shadow: 0 6px 0 #9D312F;
+    color: #e74d3c;
 }
+
+#footerButton:active{
+    background-color: white;
+    box-shadow: 0 0 0 #9D312FfooterButton;
+}
+
+#footerButton:visited{
+    background-color: white;
+    box-shadow: 0 0 0 #9D312F;
+}
+
+#footerButton:focus{
+    background-color: white;
+    outline:none;
+    top:0 !important;
+    box-shadow: 0 3px 0 #9D312F;
+    
+    color: #e74d3c;
+}
+
+#footerButton:focus:hover{
+    background-color: white;
+    top:3px !important;
+    box-shadow: 0 0 0 #9D312F !important;
+}
+
+
+footer a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+
+/*mobile*/
+@media (max-width: 991px) {
+    footer .btn{
+        font-size:12px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    footer{
+        position:static;
+        background-color:#e74d3c;
+        border-top:3px solid #ED7F74;
+    }
+    
+    footer p{
+        padding-top:24px;
+        font-family: 'Lato', sans-serif;
+        font-weight:900;
+        color:white;
+        font-size:16px;
+    }
+}
+/*end mobile*/
