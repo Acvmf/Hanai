@@ -18,18 +18,18 @@
     color:#9D312F;
     letter-spacing: 1px;
     
-    border:none;
+    /*border:none;
     border-bottom: 1px solid white;
     border-bottom: 1px solid rgba(255,255,255,0);
-    padding-bottom: 0px;
+    padding-bottom: 0;
     
-    transition-property: border-width padding-bottom;
+    transition-property: border-width padding-bottom font-size;*/
     transition-duration: 0.25s;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
     color:white;
-    padding-bottom:6px;
-    border-bottom: 3px solid white;
+    /*padding-bottom:6px;
+    border-bottom: 3px solid white;*/
 }
 /*end navigation*/

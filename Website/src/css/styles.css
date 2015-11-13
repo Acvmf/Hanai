@@ -6,7 +6,7 @@ html, body{
 }
 
 .topSection{
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     border-bottom-color: lightgray;
     padding-bottom: 32px;
 }
